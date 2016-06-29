@@ -1,0 +1,27 @@
+{
+	propertyEditors: [{
+		alias: "Vokseverk.AddressEditor",
+		name: "Address Editor",
+		editor: {
+			view: "~/App_Plugins/Vokseverk.AddressEditor/editor.html",
+			valueType: "JSON"
+		},
+		
+		prevalues: {
+			fields: [
+				{
+					label: "Standard fields to include",
+					key: "standardFields",
+					description: "Choose which fields you need the editor to fill in",
+					view: "~/App_Plugins/Vokseverk.AddressEditor/fieldseditor.html"
+				}
+			]
+		}
+	}],
+	
+	css: ["~/App_Plugins/Vokseverk.AddressEditor/style.css"],
+	
+	javascript: [
+		"~/App_Plugins/Vokseverk.AddressEditor/controller.js"
+	]
+}
