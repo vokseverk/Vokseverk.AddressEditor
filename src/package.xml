@@ -9,6 +9,7 @@
 		<file ref="package.manifest" />
 		<file ref="style.css" />
 		<file ref="editor.html" />
+		<file ref="fieldseditor.html" />
 	</files>
 	<info>
 		<package>
