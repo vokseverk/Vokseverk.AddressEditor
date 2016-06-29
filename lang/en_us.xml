@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<language alias="en" intName="English" localName="English (US)" lcid="" culture="en-US">
+    <creator>
+        <name>Chriztian Steinmeier</name>
+        <link>http://vokseverk.dk</link>
+    </creator>
+    <area alias="fields">
+        <key alias="name">Name</key>
+        <key alias="address">Address</key>
+        <key alias="address2">Address (line 2)</key>
+        <key alias="zipcode">Zipcode</key>
+        <key alias="city">City</key>
+        <key alias="country">Country</key>
+    </area>
+</language>
