@@ -35,7 +35,12 @@
 	<xsl:template match="file[@ref]">
 		<file>
 			<guid><xsl:value-of select="@ref" /></guid>
-			<orgPath><xsl:value-of select="concat('/App_Plugins/Vokseverk.', translate($packageName, ' ', ''))" /></orgPath>
+			<orgPath>
+				<xsl:value-of select="concat('/App_Plugins/Vokseverk.', translate($packageName, ' ', ''))" />
+				<xsl:if test="normalize-space(@path)">
+					<xsl:value-of select="concat('/', @path)" />
+				</xsl:if>
+			</orgPath>
 			<orgName><xsl:value-of select="@ref" /></orgName>
 		</file>
 	</xsl:template>
