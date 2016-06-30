@@ -9,7 +9,7 @@ if [[ ! -d dist ]]
 fi
 # Likewise, create the package dir
 if [[ ! -d package ]]
-	then mkdir package package/lang
+	then mkdir package
 fi
 
 # Transform the package.xml file, pulling in the README
@@ -19,7 +19,7 @@ xsltproc --novalid --xinclude --output package/package.xml lib/packager.xslt src
 cp src/*.js package/
 cp src/*.css package/
 cp src/*.html package/
-cp src/lang/*.xml package/lang/
+cp src/lang/*.xml package/
 cp src/*.manifest package/
 
 # Build the ZIP file
