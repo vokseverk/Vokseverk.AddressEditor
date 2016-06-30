@@ -10,6 +10,8 @@
 		<file ref="style.css" />
 		<file ref="editor.html" />
 		<file ref="fieldseditor.html" />
+		<file ref="da.xml" path="lang" />
+		<file ref="en_us.xml" path="lang" />
 	</files>
 	<info>
 		<package>
