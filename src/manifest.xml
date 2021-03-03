@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE umbPackage [
+	<!ENTITY % packageInfo SYSTEM "package.ent">
+	%packageInfo;
+]>
+<manifest>
+	<propertyEditor>
+		<name>&propertyEditorName;</name>
+		<alias>&packageAlias;</alias>
+		<icon>icon-binarycode</icon>
+		<group>common</group><!-- common,lists,media,people,pickers,rich content -->
+		<editor>
+			<valueType>JSON</valueType><!-- STRING,DATETIME,TEXT,INT,JSON -->
+			<view>&fileBaseName;.view.html</view>
+		</editor>
+		
+		<prevalues>
+			<field>
+				<label>Fields to include</label>
+				<key>includeFields</key>
+				<description>Choose which fields you need the editor to fill in</description>
+				<view>prevalueeditor.view.html</view>
+			</field>
+		</prevalues>
+		
+		<defaultConfig>
+			<includeFields>
+				<name>true</name>
+				<address>true</address>
+				<address2>false</address2>
+				<zipcode>true</zipcode>
+				<city>true</city>
+				<country>false</country>
+			</includeFields>
+		</defaultConfig>
+
+	</propertyEditor>
+
+	<javascript>prevalueeditor.controller.js</javascript>
+	<javascript>&fileBaseName;.controller.js</javascript>
+
+	<css>prevalueeditor.styles.css</css>
+	<css>&fileBaseName;.styles.css</css>
+</manifest>
