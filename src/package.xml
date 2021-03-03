@@ -1,35 +1,44 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE umbPackage [
-	<!ENTITY % version SYSTEM "version.ent">
-	%version;
+	<!ENTITY % packageInfo SYSTEM "package.ent">
+	%packageInfo;
 ]>
 <umbPackage>
 	<files>
-		<file ref="controller.js" />
-		<file ref="package.manifest" />
-		<file ref="style.css" />
-		<file ref="editor.html" />
-		<file ref="fieldseditor.html" />
-		<file ref="da.xml" path="lang" />
-		<file ref="en_us.xml" path="lang" />
+		<!-- The manifest file should not be versioned -->
+		<file ref="package.manifest" versioned="no" />
+		
+		<!-- The main files -->
+		<file ref="&fileBaseName;.controller.js" />
+		<file ref="&fileBaseName;.styles.css" />
+		<file ref="&fileBaseName;.view.html" />
+		<file ref="prevalueeditor.controller.js" />
+		<file ref="prevalueeditor.styles.css" />
+		<file ref="prevalueeditor.view.html" />
+		
+		<!-- Language files for translation -->
+		<language ref="da-DK.xml" />
+		<language ref="en-US.xml" />
+		<language ref="en-GB.xml" />
 	</files>
 	<info>
 		<package>
-			<name>Address Editor</name>
+			<name>&packageName;</name>
 			<version>&packageVersion;</version>
-			<license url="http://www.opensource.org/licenses/mit-license.php">MIT license</license>
-			<url>http://our.umbraco.org/projects/backoffice-extensions/image-hotspot</url>
-			<requirements>
+			<iconUrl>&packageIconURL;</iconUrl>
+			<license url="http://opensource.org/licenses/MIT">MIT License</license>
+			<url>&packageURL;</url>
+			<requirements type="strict">
 				<major>7</major>
 				<minor>0</minor>
 				<patch>0</patch>
 			</requirements>
 		</package>
 		<author>
-			<name>Chriztian Steinmeier</name>
-			<website>http://vokseverk.dk</website>
+			<name>&packageAuthor;</name>
+			<website>&packageAuthorURL;</website>
 		</author>
-		<readme><include xmlns="http://www.w3.org/2001/XInclude" href="../README.md" parse="text" /></readme>
+		<readme>&packageREADME;</readme>
 	</info>
 	<DocumentTypes />
 	<Templates />
@@ -38,6 +47,4 @@
 	<DictionaryItems />
 	<Languages />
 	<DataTypes />
-	<control />
-	<Actions />
 </umbPackage>
