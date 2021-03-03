@@ -1,37 +1,37 @@
-<ul class="ae-checkboxlist">
+<ul class="ae-checkboxlist" ng-controller="AddressEditorPrevalueController">
 	<li>
 		<label>
-			<input id="ae-name" type="checkbox" />
+			<input ng-model="model.value.name" id="ae-name" type="checkbox" ng-checked="model.value.name == true" />
 			<localize key="fields_name">Name</localize>
 		</label>
 	</li>
 	<li>
 		<label>
-			<input id="ae-address" type="checkbox" checked />
+			<input ng-model="model.value.address" id="ae-address" type="checkbox" ng-checked="model.value.address" />
 			<localize key="fields_address">Address</localize>
 		</label>
 	</li>
 	<li>
 		<label>
-			<input id="ae-address2" type="checkbox" />
+			<input ng-model="model.value.address2" id="ae-address2" type="checkbox" ng-checked="model.value.address2" />
 			<localize key="fields_address2">Address (line 2)</localize>
 		</label>
 	</li>
 	<li>
 		<label>
-			<input id="ae-zipcode" type="checkbox" checked />
+			<input ng-model="model.value.zipcode" id="ae-zipcode" type="checkbox" ng-checked="model.value.zipcode" />
 			<localize key="fields_zipcode">Zipcode</localize>
 		</label>
 	</li>
 	<li>
 		<label>
-			<input id="ae-city" type="checkbox" checked />
+			<input ng-model="model.value.city" id="ae-city" type="checkbox" ng-checked="model.value.city" />
 			<localize key="fields_city">City</localize>
 		</label>
 	</li>
 	<li>
 		<label>
-			<input id="ae-country" type="checkbox" />
+			<input ng-model="model.value.country" id="ae-country" type="checkbox" ng-checked="model.value.country" />
 			<localize key="fields_country">Country</localize>
 		</label>
 	</li>
