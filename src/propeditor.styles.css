@@ -1,3 +1,38 @@
-/*
-Erm... Eventually you're gonna have styles in your stylesheet, right?
-*/
+.address-editor > * + * {
+	margin-top: 5px;
+}
+
+.address-editor-field label {
+	display: block;
+	font-size: 80%;
+	margin-bottom: 0;
+}
+
+.address-editor-field input[type="text"] {
+	width: 50ch;
+	max-width: 100%;
+}
+
+.address-editor-group {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: flex-end;
+}
+
+.address-editor-group input[type="text"] {
+	width: 100%;
+}
+
+.address-editor-group > * + * {
+	margin-left: 10px;
+}
+
+.address-editor-group > *:first-child {
+	width: 10ch;
+}
+
+.address-editor-group > *:last-child {
+	width: calc(40ch - 10px);
+}

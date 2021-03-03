@@ -1,9 +1,33 @@
 <div class="address-editor" ng-controller="AddressEditorController">
-	<pre>
-		{{ model.value }}
-	</pre>
-
-	<pre>
-		{{ model.config }}
-	</pre>
+	<div class="address-editor-field" ng-if="model.config.includeFields.name">
+		<label for="address_name_{{$id}}"><localize key="fields_name">Name</localize></label>
+		<input ng-model="model.value.name" type="text" id="address_name_{{$id}}" />
+	</div>
+	
+	<div class="address-editor-field" ng-if="model.config.includeFields.address">
+		<label for="address_address_{{$id}}"><localize key="fields_address">Address</localize></label>
+		<input ng-model="model.value.address" type="text" id="address_address_{{$id}}" />
+	</div>
+	
+	<div class="address-editor-field" ng-if="model.config.includeFields.address2">
+		<label for="address_addres2_{{$id}}"><localize key="fields_address2">Address (line 2)</localize></label>
+		<input ng-model="model.value.address2" type="text" id="address_addres2_{{$id}}" />
+	</div>
+	
+	<div class="address-editor-group">
+		<div class="address-editor-field" ng-if="model.config.includeFields.zipcode">
+			<label for="address_zipcode_{{$id}}"><localize key="fields_zipcode">ZIP code</localize></label>
+			<input ng-model="model.value.zipcode" type="text" id="address_zipcode_{{$id}}" />
+		</div>
+		
+		<div class="address-editor-field" ng-if="model.config.includeFields.city">
+			<label for="address_city_{{$id}}"><localize key="fields_city">City</localize></label>
+			<input ng-model="model.value.city" type="text" id="address_city_{{$id}}" />
+		</div>
+	</div>
+	
+	<div class="address-editor-field" ng-if="model.config.includeFields.country">
+		<label for="address_country_{{$id}}"><localize key="fields_country">Country</localize></label>
+		<input ng-model="model.value.country" type="text" id="address_country_{{$id}}" />
+	</div>
 </div>

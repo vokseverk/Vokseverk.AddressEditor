@@ -1,5 +1,9 @@
 angular.module("umbraco").controller("AddressEditorController", function ($scope) {
 	
-	// Here be other dragons
+	if (!$scope.model.value) {
+		$scope.model.value = { }
+	}
+	
+	// Other dragons be here
 
 });
