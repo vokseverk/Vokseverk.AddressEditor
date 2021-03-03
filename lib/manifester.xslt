@@ -91,6 +91,13 @@
 		<xsl:if test="not(position() = last())">, </xsl:if>
 	</xsl:template>
 	
+	<xsl:template match="*[. = 'true'] | *[. = 'false']" mode="json">
+		<xsl:value-of select="name()" />
+		<xsl:text>: </xsl:text>
+		<xsl:value-of select="." />
+		<xsl:if test="not(position() = last())">, </xsl:if>
+	</xsl:template>
+	
 	<xsl:template match="*[not(text()) and not(*)]" mode="json">
 		<xsl:value-of select="name()" />
 		<xsl:text>: ""</xsl:text>
