@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <language alias="da" intName="Danish" localName="Dansk" lcid="" culture="da-DK">
     <creator>
-        <name>Chriztian Steinmeier</name>
-        <link>http://vokseverk.dk</link>
+        <name>Vokseværk</name>
+        <link>https://vokseverk.dk</link>
     </creator>
     <area alias="fields">
         <key alias="name">Navn</key>
