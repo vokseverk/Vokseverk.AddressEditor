@@ -1,0 +1,18 @@
+<!ENTITY packageVersion "0.5.0">
+
+<!ENTITY orgDisplayName "Vokseværk">
+<!ENTITY orgNamespace "Vokseverk">
+
+<!ENTITY propertyEditorName "Address Editor">
+<!ENTITY propertyEditorAlias "AddressEditor">
+
+<!ENTITY packageName "&orgDisplayName; &propertyEditorName;">
+<!ENTITY packageAlias "&orgNamespace;.&propertyEditorAlias;">
+<!ENTITY packageAuthor "&orgDisplayName;">
+
+<!ENTITY fileBaseName "propeditor">
+
+<!ENTITY packageAuthorURL "https://vokseverk.dk/">
+<!ENTITY packageIconURL "https://raw.githubusercontent.com/vokseverk/Vokseverk.AddressEditor/main/images/addresseditor-icon.png">
+<!ENTITY packageURL "https://our.umbraco.com/packages/backoffice-extensions/address-editor/">
+<!ENTITY packageREADME "TODO">
