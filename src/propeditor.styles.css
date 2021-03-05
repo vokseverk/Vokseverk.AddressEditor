@@ -1,5 +1,5 @@
 .address-editor > * + * {
-	margin-top: 5px;
+	margin-top: 10px;
 }
 
 .address-editor-field label {
@@ -35,6 +35,10 @@
 
 .address-editor-group > *:last-child {
 	width: calc(40ch - 10px);
+}
+
+.address-editor-group > *:only-child {
+	width: auto;
 }
 
 .address-editor-group > *:only-child input[type="text"] {
