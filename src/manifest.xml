@@ -7,8 +7,8 @@
 	<propertyEditor>
 		<name>&propertyEditorName;</name>
 		<alias>&packageAlias;</alias>
-		<icon>icon-binarycode</icon>
-		<group>common</group><!-- common,lists,media,people,pickers,rich content -->
+		<icon>icon-vcard</icon>
+		<group>common</group><!-- common,lists,media,display,people,pickers,rich content -->
 		<editor>
 			<valueType>JSON</valueType><!-- STRING,DATETIME,TEXT,INT,JSON -->
 			<view>&fileBaseName;.view.html</view>
