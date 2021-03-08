@@ -1,4 +1,4 @@
-<!ENTITY packageVersion "0.5.0">
+<!ENTITY packageVersion "1.0.0">
 
 <!ENTITY orgDisplayName "Vokseværk">
 <!ENTITY orgNamespace "Vokseverk">
@@ -15,4 +15,4 @@
 <!ENTITY packageAuthorURL "https://vokseverk.dk/">
 <!ENTITY packageIconURL "https://raw.githubusercontent.com/vokseverk/Vokseverk.AddressEditor/main/images/addresseditor-icon.png">
 <!ENTITY packageURL "https://our.umbraco.com/packages/backoffice-extensions/address-editor/">
-<!ENTITY packageREADME "TODO">
+<!ENTITY packageREADME "A configurable address editor with fields for name, address, zipcode etc.">
