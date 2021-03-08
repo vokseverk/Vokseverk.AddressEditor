@@ -2,8 +2,16 @@
 
 # Address Editor for Umbraco
 
-Goal: To have a configurable address editor that (amongst other things) is
-capable of putting the zip code and city name editors in the same row :)
+This is a configurable address editor for Umbraco v7 & v8, that is
+capable of putting the zip code and city name editors on the same row :)
+
+It's a nice replacement for having 3, 4, 5 or more generic *Textstring* fields
+on the doctype — a single property for the data instead of having to create a
+convoluted *Nested Content/Archetype* setup for it.
+
+The [releases page][RELS] has PropertyValueConverters for use in your projects.
+
+[RELS]: https://github.com/vokseverk/Vokseverk.AddressEditor/releases
 
 ## Screenshots
 
@@ -15,12 +23,30 @@ capable of putting the zip code and city name editors in the same row :)
 
 ![Versionnumber Config](images/addresseditor-config.jpg)
 
+## Rendering
 
-Also to be able to build a **Contact** property with **Name**, **Phone** and
-**Email** fields on one document type, and to have another that holds
-**Company Name**, **Address**, **Zip & City** for another document type.
+The raw value is a JSON object with the individual segments, e.g.:
 
-All without having 3, 4, 5 or more generic *Textstring* fields on the doctype,
-but to have a single property with the data. And not have to create a
-convoluted *Nested Content/Archetype* setup for it either.
+```json
+{
+  "name": "Etch-A-Sketch",
+  "address": "Streetname 55",
+  "zipcode": "1234",
+  "city": "East Drawing"
+}
+```
 
+Using the PropertyValueConverter you can access them directly:
+
+```razor
+<div class="h-card">
+	<div class="p-name">@(Model.Name)</div>
+	<div class="h-adr">
+		<div class="p-street-address">@(Model.Address)</div>
+		<div>
+			<span class="p-postal-code">@(Model.Zipcode)</span>
+			<span class="p-locality">@(Model.City)</span>
+		</div>
+	</div>
+</div>
+```
