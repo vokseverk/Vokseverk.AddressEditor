@@ -13,6 +13,6 @@
 <!ENTITY fileBaseName "propeditor">
 
 <!ENTITY packageAuthorURL "https://vokseverk.dk/">
-<!ENTITY packageIconURL "https://raw.githubusercontent.com/vokseverk/Vokseverk.AddressEditor/main/images/addresseditor-icon.png">
+<!ENTITY packageIconURL "https://raw.githubusercontent.com/vokseverk/Vokseverk.AddressEditor/main/images/vv-addresseditor-icon.png">
 <!ENTITY packageURL "https://our.umbraco.com/packages/backoffice-extensions/address-editor/">
 <!ENTITY packageREADME "A configurable address editor with fields for name, address, zipcode etc.">
