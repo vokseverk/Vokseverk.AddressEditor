@@ -1,6 +1,6 @@
 # Address Editor for Umbraco
 
-<img align="right" src="images/vv-addresseditor-icon.png" width="120" height="120" alt="A set of input fields for an address on top of the Vokseværk 'fire-heart' logo" />
+<img align="right" src="images/vv-addresseditor-icon.png" width="180" height="180" alt="A ‘Zip’ input field inside a square with the Vokseværk ‘fire-heart’ logo" />
 
 This is a configurable address editor for Umbraco v7 & v8, that is
 capable of putting the zip code and city name editors on the same row :)
